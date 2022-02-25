@@ -6,3 +6,5 @@ Motorola Mega68K - Custom Arduino Mega2560 Full-size Shield for Motorola 68010 D
 ![mega68k](https://github.com/TheMindVirus/Mega68K/blob/main/schematic.png)
 
 ![mega68k](https://github.com/TheMindVirus/Mega68K/blob/main/Mega68K.jpg)
+
+![mega68k](https://github.com/TheMindVirus/Mega68K/blob/main/IMG_5287.jpg)
