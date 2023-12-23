@@ -1,0 +1,94 @@
+[68010-Reference-Platform]
+
+OPCODE     | HEX    | BINARY (D15->D0)  |
+
+ABCD       | 0xC100 | 1100---1 -------- | Add Decimal with Extend
+ADD        | 0xD000 | 1101---- -------- | Addition
+ADDA       | 0xD0C0 | 1101---- 11------ | Addition Address
+ADDQ       | 0x5000 | 1010---- -------- | Addition Quick
+ADDI       | 0x0600 | 0000-11- -------- | Addition Immediate
+ADDX       | 0xD100 | 1101---1 -------- | Addition with Extend
+AND        | 0xC000 | 1100---- -------- | Logical And
+ANDI       | 0x0200 | 0000--1- -------- | Logical And Immediate
+ASL        | 0xE100 | 1110---1 -------- | Arithmetic Shift Left
+ASR        | 0xE000 | 1110---- -------- | Arithmetic Shift Right
+
+BCC        | 0x6400 | 0110-1-- -------- | Branch Conditionally
+BCHG       | 0x0140 | 0000---1 -1------ | Bit Test and Change
+BCLR       | 0x0180 | 0000---1 1------- | Bit Test and Clear
+BRA        | 0x6000 | 0110---- -------- | Branch Always
+BSET       | 0x01C0 | 0000---1 11------ | Bit Test and Set
+BSR        | 0x6100 | 0110---1 -------- | Branch to Subroutine
+BTST       | 0x0100 | 0000---1 -------- | Bit Test
+
+CHK        | 0x4180 | 0100---1 1------- | Check Register against Bounds
+CLR        | 0x4200 | 0100--1- -------- | Clear Operand
+CMP        | 0xB000 | 1011---- -------- | Compare
+CMPA       | 0xB0C0 | 1011---- 11------ | Compare Address
+CMPM       | 0xB108 | 1011---1 ----1--- | Compare Memory
+CMPI       | 0x0C00 | 000011-- -------- | Compare Immediate
+
+DBCC       | 0x54C8 | 0101-1-- 11--1--- | Decrement and Branch Conditionally
+DIVS       | 0x81C0 | 1000---1 11------ | Signed Divide
+DIVU       | 0x80C0 | 1000---- 11------ | Unsigned Divide
+
+EOR        | 0xB100 | 1011---1 -------- | Exclusive Or
+EORI       | 0x0A00 | 00001-1- -------- | Exclusive Or Immediate
+EXG        | 0xC140 | 1100---1 -1------ | Exchange Registers
+EXT        | 0x4880 | 01001--- 1------- | Sign Extend
+
+JMP        | 0x4ED0 | 0100111- 11-1---- | Jump
+JSR        | 0x4E90 | 0100111- 1--1---- | Jump to Subroutine
+
+LEA        | 0x41D0 | 0100---1 11-1---- | Load Effective Address
+LINK       | 0x4E50 | 0100111- -1-1---- | Link Stack
+LSL        | 0xE108 | 1110---1 ----1--- | Logical Shift Left
+LSR        | 0xE008 | 1110---- ----1--- | Logical Shift Right
+ 
+MOVE       | 0x0100 | 0001---- -------- | Move Source to Destination
+MOVEA      | 0x2040 | 0010---- -1------ | Move Address
+MOVEC(DC)  | 0x4E7A | 0100111- -1111-1- | Move Control Register (N/A)
+MOVEM      | 0x4890 | 01001--- 1--1---- | Move Multiple Registers
+MOVEP      | 0x0108 | 0000---1 ----1--- | Move Peripheral Data
+MOVEQ      | 0x7000 | 0111---- -------- | Move Quick
+MOVES(???) | 0x0E00 | 0000111- -------- | Move Alternate Address Space (N/A)
+MULS       | 0xC1C0 | 1100---1 11------ | Signed Multiply
+MULU       | 0xC0C0 | 1100---- 11------ | Unsigned Multiply
+
+NBCD       | 0x4800 | 01001--- -------- | Negate Decimal with Extend
+NEG        | 0x4400 | 0100-1-- -------- | Negate
+NEGX       | 0x4000 | 0100---- -------- | Negate with Extend
+NOP        | 0x4E71 | 0100111- -111---1 | No Operation
+NOT        | 0x4600 | 0100-11- -------- | Ones Complement
+
+OR         | 0x8000 | 1000---- -------- | Logical Or
+ORI        | 0x0000 | 0000---- -------- | Logical Or Immediate
+
+PEA        | 0x4850 | 01001--- -1-1---- | Push Effective Address
+
+RESET      | 0x4E70 | 0100111- -111---- | Reset External Devices
+ROL        | 0xE118 | 1110---1 ---11--- | Rotate Left
+ROR        | 0xE018 | 1110---- ---11--- | Rotate Right
+ROXL       | 0xE110 | 1110---1 ---1---- | Rotate Left with Extend
+ROXR       | 0xE010 | 1110---- ---1---- | Rotate Right with Extend
+RTD(DC)    | 0x4E74 | 0100111- -111-1-- | Return and Deallocate (N/A)
+RTE        | 0x4E73 | 0100111- -111--11 | Return from Exception
+RTR        | 0x4E77 | 0100111- -111-111 | Return and Restore
+RTS        | 0x4E75 | 0100111- -111-101 | Return from Subroutine
+
+SBCD       | 0x8100 | 1000---1 -------- | Subtract Decimal with Extend
+SCC        | 0x54C0 | 0101-1-- 11------ | Set Conditional
+STOP       | 0x4E72 | 0100111- -111--1- | Stop
+SUB        | 0x9000 | 1001---- -------- | Subtract
+SUBA       | 0x90C0 | 1001---- 11------ | Subtract Address
+SUBI       | 0x0400 | 0000-1-- -------- | Subtract Immediate
+SUBQ       | 0x5100 | 0101---1 -------- | Subtract Quick
+SUBX       | 0x9100 | 1001---1 -------- | Subtract with Extend
+SWAP       | 0x4840 | 01001--- -1------ | Swap Data Register Halves
+
+TAS        | 0x4AC0 | 01001-1- 11------ | Test and Set Operand
+TRAP       | 0x4E40 | 0100111- -1------ | Trap
+TRAPV      | 0x4E76 | 0100111- -111-11- | Trap on Overflow
+TST        | 0x4A00 | 01001-1- -------- | Test
+
+UNLK       | 0x4E58 | 0100111- -1-11--- | Unlink
